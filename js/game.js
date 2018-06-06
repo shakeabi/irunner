@@ -337,9 +337,10 @@ function intro(){
     ctx.drawImage(introimg, 0, 0, cwidth, cheight);
     
     ctx.fillStyle = "white";
-    ctx.font = "50px Georgia";
-    ctx.fillText("IRunner",cwidth/2-90,100);
+    ctx.font = "60px Georgia";
+    ctx.fillText("IRunner",cwidth/2-110,60);
     ctx.font = "30px Georgia";
+    ctx.fillText("Press 'p' to pause!",cwidth/2-120,115);
     ctx.fillText("Press Enter!",cwidth/2-80,150);
     ctx.fillStyle = "red";
     ctx.font = "25px Trebuchet MS";
