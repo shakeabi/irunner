@@ -338,7 +338,9 @@ function intro(){
     
     ctx.fillStyle = "white";
     ctx.font = "50px Georgia";
-    ctx.fillText("IRunner",cwidth/2-90,120);
+    ctx.fillText("IRunner",cwidth/2-90,100);
+    ctx.font = "30px Georgia";
+    ctx.fillText("Press Enter!",cwidth/2-80,150);
     ctx.fillStyle = "red";
     ctx.font = "25px Trebuchet MS";
     ctx.fillText("The dungeon is haunted by ghosts.",cwidth/2-150,190);
