@@ -62,7 +62,7 @@ wall.prototype.entityCollision = function(entity, mouse){
 						mouse.mouseY = this.ypos + this.length + entity.pheight/2 +1;
 					}
 
-					if(entity.x+entity.pwidth/2>=this.xpos && entity.x-entity.pwidth/2<this.xpos+this.thickness-10 && entity.y>=this.ypos && entity.y+entity.pheight<=this.ypos+this.length ){
+					if(entity.x+entity.pwidth/2>=this.xpos && entity.x-entity.pwidth/2<this.xpos+this.thickness-10 && entity.y>=this.ypos && entity.y<=this.ypos+this.length ){
 						mouse.mouseX = this.xpos - entity.pwidth/2 - 5;
 					
 					}
@@ -75,7 +75,7 @@ wall.prototype.entityCollision = function(entity, mouse){
 						mouse.mouseY = this.ypos - entity.pheight/2 -1;
 					}
 
-					if(entity.x+entity.pwidth/2>=this.xpos && entity.x-entity.pwidth/2<this.xpos+this.thickness-10 && entity.y>=this.ypos && entity.y+entity.pheight<=this.ypos+this.length ){
+					if(entity.x+entity.pwidth/2+5>=this.xpos && entity.x-entity.pwidth/2<this.xpos+this.thickness-10 && entity.y+entity.pwidth/2>=this.ypos && entity.y+entity.pheight<=this.ypos+this.length ){
 						mouse.mouseX = this.xpos - entity.pwidth/2 - 1;
 
 					}
